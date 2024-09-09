@@ -63,7 +63,7 @@ const App = () => {
         <span>Error...</span>
       )}
 
-      {movies && (
+      {movies.length > 0 && movies[index] && (
         <>
           <Backdrop path={movies[index].backdrop_path} />
 
